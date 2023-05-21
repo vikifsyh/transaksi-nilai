@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Projek UAS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+		<nav>
+			<div class="wrapper">
+				<div class="logo"><a href="">Viki Flendiansyah</a></div>
+				<div class="menu">
+					<ul>
+						<li><a href="#beranda">Beranda</a></li>
+						<li><a href="#transaksi">Transaksi Nilai</a></li>
+						<li><a href="#simulasi">Simulasi Audit</a></li>
+						<li><a href="#footer">Tentang</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="wrapper">
+			<section class="beranda" id="beranda">
+				<img class="img" src="index.png" width="250" height="250">
+				<div class="kolom">
+					<p class="deskripsi">Universitas Muhammadiyah Purwokerto</p>
+					<h2 class="h2">Teknik dan Sains</h2>
+					<p class="h2">Teknik Informatika</p>
+				</div>
+			</section>
+		</div>
+
+
+		<section id="transaksi">
+			<div class="nilai">
+				<p class="judul">Transaksi Nilai</p>
+				<h2 class="subjudul">Simulasi Skripsi</h2>
+			</div>
+			<div class="transaksi">
+            	<form name="formTransaksi">
+                	<table>
+                        <tr>
+                            <th>NO</th>
+                            <th>KOMPONEN PENILAIAN</th>
+                            <th>SKOR</th>
+                            <th>BOBOT</th>
+                            <th>BOBOT X SKOR</th>
+                         </tr>
+                         <tr>
+                            <td>1</td>
+                            <td>KETETAPAN DAN KEDISPLINAN SELAMA PELAKSANAAN BIMBINGAN SKRIPSI.</td>
+                            <td><input type="text" size="5" id="angka1" onkeyup="nilai()"></td>
+                            <td id="bobot"><strong>50</strong></td>
+                            <td><h1 id="hasil1"></h1></input></td>
+
+                         </tr>
+                         <tr>
+                             <td>2</td>
+                             <td>KEMAUAN DAN TINGKAT KESERIUSAN DALAM MENYELESAIKAN SKRIPSI.</td>
+                             <td><input size="5" type="text" size="5" id="angka2" onkeyup="nilai()"></td>
+                             <td><strong>50</strong></td>
+                             <td><h1 id="hasil2"></h1></td>
+                         </tr>
+                         <tr>
+                         	<th colspan="3"><strong>TOTAL</strong></th>
+                         	<td><strong>100</strong></td>
+                         	<td><h1 id="total" size="5"></h1></td>
+                         </tr>
+                     </table>
+                 </form>
+             </div>
+		</section>
+
+		<section id="skripsi">
+			<div class="skripsi">
+				<form name="formSkripsi">
+					<table>
+						<tr>
+							<th rowspan="2">NO</th>
+							<th rowspan="2">KOMPONEN PENILAIAN</th>
+							<th colspan="3">SKOR PENGUJI</th>
+							<th rowspan="2">RATA RATA</th>
+							<th rowspan="2">BOBOT</th>
+							<th rowspan="2">BOBOT X SKOR</th>
+						</tr>
+						<tr>
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+						</tr>
+						<tr>
+							<td>1.</td>
+							<td>ORINALITAS DAN KEBARUAN TOPIK PENELITIAN</td>
+							<td><input type="text" size="5" id="skorA1" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorA2" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorA3" onkeyup="nilai2()"></td>
+							<td><h1 id="rataA"></h1></td>
+							<td><strong>15</strong></td>
+							<td><h1 id="hasilA"></h1></td>
+						</tr>
+						<tr>
+							<td>2.</td>
+							<td>RELEVANSI LOGIS ANTARA JUDUL, MASALAH, TEORI, METODE DAN HASIL PENELITIAN</td>
+							<td><input type="text" size="5" id="skorB1" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorB2" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorB3" onkeyup="nilai2()"></td>
+							<td><h1 id="rataB"></h1></td>
+							<td><strong>20</strong></td>
+							<td><h1 id="hasilB"></h1></td>
+						</tr>
+							<tr>
+							<td>3.</td>
+							<td>TATA TULIS</td>
+							<td><input type="text" size="5" id="skorC1" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorC2" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorC3" onkeyup="nilai2()"></td>
+							<td><h1 id="rataC"></h1></td>
+							<td><strong>20</strong></td>
+							<td><h1 id="hasilC"></h1></td>
+						</tr>
+						<tr>
+							<td>4.</td>
+							<td>PENGUASAAN MATERI PENELITIAN</td>
+							<td><input type="text" size="5" id="skorD1" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorD2" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorD3" onkeyup="nilai2()"></td>
+							<td><h1 id="rataD"></h1></td>
+							<td><strong>20</strong></td>
+							<td><h1 id="hasilD"></h1></td>
+						</tr>
+						<tr>
+							<td>5.</td>
+							<td>PRESENTASI DAN ARGUMENTASI JAWABAN</td>
+							<td><input type="text" size="5" id="skorE1" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorE2" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorE3" onkeyup="nilai2()"></td>
+							<td><h1 id="rataE"></h1></td>
+							<td><strong>15</strong></td>
+							<td><h1 id="hasilE"></h1></td>
+						</tr>
+						<tr>
+							<td>6.</td>
+							<td>PENAMPILAN SAAT PRESENTASI</td>
+							<td><input type="text" size="5" id="skorF1" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorF2" onkeyup="nilai2()"></td>
+							<td><input type="text" size="5" id="skorF3" onkeyup="nilai2()"></td>
+							<td><h1 id="rataF"></h1></td>
+							<td><strong>10</strong></td>
+							<td><h1 id="hasilF"></h1></td>
+						</tr>
+						<tr>
+							<th colspan="7">TOTAL</th>
+							<td><h1 id="totalNilai"></h1></td>
+						</tr>
+						<tr>
+							<th colspan="7">NILAI AKHIR</th>
+							<td><h1 id="nilaiakhir"></h1></td>
+						</tr>
+						<tr>
+							<th colspan="7">NILAI HURUF</th>
+							<td><h1 id="nilaiHuruf"></h1></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</section>
+		<br><br>
+		<section id="simulasi">
+			<h2 class="subjudul">Simulasi Audit</h2>
+			<div class="simulasi">
+            	<form name="datasimulasi">
+                	<table>
+				        <tr>
+				            <th rowspan="2">NO</th>
+				            <th rowspan="2">Indikator</th>
+				            <th colspan="2">Rubrik</th>
+				            <th colspan="2">Keterangan</th>				        
+				        </tr>
+				        <tr>
+				            <th>Skor</th>
+				            <th>Uraian</th>
+				            <th>Input Nilai</th>
+				            <th>Skor</th>
+				        </tr>
+				        <tr>
+				            <td rowspan="5">1</td>
+				            <td rowspan="5">Persentase Dosen yang melakukan kegiatan awal perkuliahan (KAP)</br>
+				            1). Penyampaian sub-CPMK</br>
+				       		2). Penyampaian indikator pembelajaran</br>
+				       		3). Pemeriksaan kehadiran siswa</td>
+				            <td class="table">4</td>
+				            <td>KAP Dosen ≥ 80%</td>
+				            <td rowspan="5"><input type="text" size="5" id="nilai1" onkeyup="skor()"></td>
+				            <td rowspan="5"><h1 id="skor1"></h1></td>
+				        </tr>
+						<tr>
+				            <td class="table">3</td>
+				            <td>60% ≤ KAP Dosen < 80%</td>
+				        </tr>
+						<tr>
+				            <td class="table">2</td>
+				            <td>40% ≤ KAP Dosen < 60%</td>
+				        </tr>
+						<tr>
+				            <td class="table">1</td>
+				            <td>10% ≤ KAP Dosen < 40%</td>
+				        </tr>
+				        <tr>
+				            <td class="table">0</td>
+				            <td>KAP Dosen < 10%</td>
+				        </tr>
+				        <tr>
+				            <td rowspan="5">2</td>
+				            <td rowspan="5">Persentase Dosen yang memenuhi karakteristik proses pembelajaran yang bersifat</br>
+				            interaktif meliputi kegiatan interaksi yang konstruktif antara:</br>
+				            1). Mahasiswa dengan dosen</br>
+				       		2). Mahasiswa dengan mahasiswa</br>
+				       		3). Mahasiswa dengan sumber belajar</td>
+				            <td class="table">4</td>
+				            <td>Dosen Interaktif ≥ 80%</td>
+				            <td rowspan="5"><input type="text" size="5" id="nilai2" onkeyup="skor()"></td>
+				            <td rowspan="5"><h1 id="skor2"></h1></td>
+				        </tr>
+						<tr>
+				            <td class="table">3</td>
+				            <td>60% ≤ Dosen Interaktif < 80%</td>
+				        </tr>
+						<tr>
+				            <td class="table">2</td>
+				            <td>40% ≤ Dosen Interaktif < 60%</td>
+				        </tr>
+						<tr>
+				            <td class="table">1</td>
+				            <td>10% ≤ Dosen Interaktif < 40%</td>
+				        </tr>
+				        <tr>
+				            <td class="table">0</td>
+				            <td>Dosen Interaktif< 10%</td>
+				        </tr>
+				        <tr>
+				            <td rowspan="5">3</td>
+				            <td rowspan="5">Persentase Dosen yang memenuhi karakteristik proses pembelajaran</br>
+				            holistik yang meliputi</br>
+				            1). Belajar secara utuh</br>
+				       		2). Lingkungan belajar yang berintegritas</br>
+				       		3). Mewujudkan pribadi berintegritas antara individu dan sosial</br>
+				       		4). Fokus dalam belajar</br>
+				       		5). Mengembangkan mahasiswa sesuai potensi</td>
+				            <td class="table">4</td>
+				            <td>Dosen Holistik ≥ 80%</td>
+				            <td rowspan="5"><input size="5" type="text" id="nilai3" onkeyup="skor()"></td>
+				            <td rowspan="5"><h1 id="skor3"></h1></td>
+				        </tr>
+						<tr>
+				            <td class="table">3</td>
+				            <td>60% ≤ Dosen Holistik < 80%</td>
+				        </tr>
+						<tr>
+				            <td class="table">2</td>
+				            <td>40% ≤ Dosen Holistik < 60%</td>
+				        </tr>
+						<tr>
+				            <td class="table">1</td>
+				            <td>10% ≤ Dosen Holistik < 40%</td>
+				        </tr>
+				        <tr>
+				            <td class="table">0</td>
+				            <td>Dosen Holistik < 10%</td>
+				        </tr>
+				            <td rowspan="5">4</td>
+				            <td rowspan="5">Persentase Dosen yang memenuhi karaktik proses pembelajaran</br>
+				            yang bersifat integratif yang meliputi</br>
+				            1). Menggunakan pendekatan antar mata kuliah</br>
+				       		2). Menggabungkan beberapa mata kuliah</br>
+				       		3). Menentukan keterampilan, konsep dan sikap dalam beberapa mata kuliah</td>
+				            <td class="table">4</td>
+				            <td>Dosen Integratif ≥ 80%</td>
+				            <td rowspan="5"><input type="text" size="5" id="nilai4" onkeyup="skor()"></td>
+				            <td rowspan="5"><h1 id="skor4"></h1></td>
+				        </tr>
+						<tr>
+				            <td class="table">3</td>
+				            <td>60% ≤ Dosen Integratif < 80%</td>
+				        </tr>
+						<tr>
+				            <td class="table">2</td>
+				            <td>40% ≤ Dosen Integratif < 60%</td>
+				        </tr>
+						<tr>
+				            <td class="table">1</td>
+				            <td>10% ≤ Dosen Integratif < 40%</td>
+				        </tr>
+				        <tr>
+				            <td class="table">0</td>
+				            <td>Dosen Integratif < 10%</td>
+				        </tr>
+				        <tr>
+				        	<th colspan="4"><strong>Rata Rata</strong></th>
+				        	<td><h1 id="ratanilai"></h1></td>
+				        	<td><h1 id="rataskor"></h1></td>
+				        </tr>				        
+				    </table>
+                </form>
+             </div>
+
+		</section>
+		<br><br><br>
+
+		<section class="footer" id="footer">
+			<div class="sosmed">
+				<a href="https://www.instagram.com/viki.fldnsyh/"><i class="fab fa-instagram"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href="https://www.facebook.com/vickyfendi666/"><i class="fab fa-facebook"></i></a>
+		    </div>
+		    <p class="copyright">
+		    	Copyright 2022 &copy;, Viki Flendiansyah
+		</section>
+
+		<script src="nilai.js"></script>
+</body>	
+</html>

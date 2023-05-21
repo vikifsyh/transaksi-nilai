@@ -1,0 +1,29 @@
+var nilaiHuruf = document.getElementById('nilaiHuruf');
+
+	if (nilaiakhir <= 86 && <= 100) {
+		nilaiHuruf.innerHTML = 'A';
+	}
+	else if (nilaakhir <= 81 && <= 86) {
+		nilaiakhir.innerHTML = 'A-';
+	}
+	else if (nilaiakhir <= 76 && <= 81) {
+		nilaiHuruf.innerHTML = 'B+';
+	}
+	else if (nilaiakhir <= 71 && <= 76) {
+		nilaiHuruf.innerHTML = 'B';
+	}
+	else if (nilaiakhir <= 66 && <== 71) {
+		nilaiHuruf.innerHTML = 'B-';
+	}
+	else if (nilaiakhir <= 61 &&  <= 66) {
+		nilaiHuruf.innerHTML = 'C+';
+	}
+	else if (nilaiakhir <= 56 && <= 61) {
+		nilaiHuruf.innerHTML = 'C';
+	}
+	else if (nilaiakhir <= 41 && <= 56) {
+		nilaiHuruf.innerHTML = 'D';
+	}
+	else {
+		nilaiHuruf.innerHTML = 'E'
+	}

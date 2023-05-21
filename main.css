@@ -1,0 +1,235 @@
+* {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: auto;
+}
+
+.logo a {
+	font-size: 32px;
+	font-weight: 800;
+	float: left;
+	font-family: courier;
+	color: #1746A2;
+
+}
+
+.menu{
+	float: right;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	margin: auto;
+	line-height: 80px;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background: #ffffff;
+	border-bottom: 1px solid black;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 16px 0px 16px;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+}
+
+.beranda {
+	margin: auto;
+	display: flex;
+	margin-bottom: 50px;
+
+}
+
+.img {
+	margin-top: 15px;
+}
+
+.kolom {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+	font-size: 20px;
+	font-weight: bold;
+	color: #1746A2;
+	margin-left: 160px;
+}
+
+.h2 {
+	font-weight: 800;
+	font-size: 45px;
+
+	color: #1746A2;
+	width: 100%;
+	line-height: 50px;
+	margin-left: 160px;
+}
+
+
+.p {
+	margin-left: 100px;
+}
+
+.judul{
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.subjudul{
+	font-size: 28px;
+	color: black;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.transaksi{
+	justify-content: center;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	width: 1000px;
+	margin-left: 100px;
+}
+
+.transaksi td {
+  border: .5px solid #D9D9D9;
+  text-align: left;
+  padding: 8px;
+}
+
+.transaksi th {
+	text-align: center;
+	border: .5px solid #d9d9d9;
+	background: lightskyblue;
+	padding: 8px;
+}
+
+.simulasi {
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-left: 70px;
+	display: flex;
+	width: 1000px;
+	margin-left: 115px;
+}
+
+.simulasi td {
+  border: .5px solid #D9D9D9;
+  text-align: left;	
+  padding: 1px;
+
+}
+
+.table {
+	display: flex;
+	justify-content: center;
+}
+
+.simulasi th {
+	  text-align: center;
+	  border: .5px solid #d9d9d9;
+	  background-color: lightskyblue;
+	  padding: 1px;
+}
+
+.skripsi {
+	justify-content: center;
+	margin-bottom: 20px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	width: 1000px;
+	margin-left: 115px;
+}
+
+.skripsi td {
+	border: 0.5px solid #D9D9D9;
+  text-align: left;
+  padding: 5PX;
+}
+
+.skripsi th {
+	  text-align: center;
+	  border: .5px solid #d9d9d9;
+	  background-color: lightskyblue;
+	  padding: 5px;
+}
+
+.footer {
+	font-weight: 400;
+	background-color: white;
+	border-top: 1px solid black;
+}
+
+.footer .sosmed {
+	text-align: center;
+	padding-bottom: 20px;
+	color: black;
+}
+
+.footer .sosmed a {
+	font-size: 24px;
+	color: inherit;
+	border: 1px solid black;
+	width: 25px;
+	height: 25px;
+	line-height: 23px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 8px;
+	opacity: 0.75;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.footer .sosmed a:hover {
+	opacity: 0.5;
+}
+
+.footer .copyright {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 15px;
+	color: #aaa;
+}
